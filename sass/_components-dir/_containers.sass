@@ -1,0 +1,75 @@
+.nav-container
+    width: 90%
+    margin: auto
+    display: flex
+    justify-content: space-between
+
+.navbar-container
+    padding: 20px 0
+
+ul.navbar-list
+    list-style: none
+    display: flex
+
+ul.navbar-list li.navbar-list-item
+    margin-left: 40px
+    font-size: 18px
+
+ul.navbar-list li.navbar-list-item a
+    text-decoration: none
+    color: $brand-light-grey
+
+ul.navbar-list li.navbar-list-item a:after
+    content: ""
+    display: block
+    height: 3px
+    background-color: $brand-grey
+    width: 0
+    border-radius: 20px
+    transition: all 1s ease
+
+ul.navbar-list li.navbar-list-item:hover a:after
+    width: 100%
+
+
+
+ul.navbar-list li.navbar-list-item a.active
+    color: $brand-purple
+
+ul.navbar-list li.navbar-list-item a.active:after
+    content: ""
+    display: block
+    height: 8px
+    width: 8px
+    border-radius: 50%
+    background-color: $brand-purple
+
+ul.navbar-list li.navbar-list-item:hover a.active:after
+    transform: translateX(40px)
+
+ul.navbar-list li.navbar-list-item a.sign-up-link,
+ul.navbar-list li.navbar-list-item a.sign-in-link
+    display: none
+
+.login-signup-container
+    padding: 20px 0
+
+.sign-in-link-wrapper
+    display: inline-block
+
+.header-container
+    display: flex
+    justify-content: space-between
+    width: 90%
+    margin: auto
+    flex-wrap: wrap
+
+.header-text
+    width: 45%
+
+.header-img-wrapper
+    width: 50%
+
+.header-img-wrapper img
+    width: 100%
+
